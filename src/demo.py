@@ -8,5 +8,3 @@ kw_filter = sys.argv[2:]
 irods_fcs.rods_util.metadata_demo( fcs_file_name,
                                    keyword_filter = (None if not kw_filter else kw_filter)
                                   )
-
-# - DWM - # keyword_filter = ['SMID','TBID']
