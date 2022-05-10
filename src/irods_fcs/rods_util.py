@@ -6,8 +6,10 @@ from irods.data_object import (iRODSDataObject)
 
 from . import (load_keywords, filter_dict)
 
+
 def session(**opts):
     return make_session(*opts)
+
 
 def do_atomic_avu_request (session
                       , data_object
@@ -25,8 +27,7 @@ def do_atomic_avu_request (session
 
     data_object.metadata.apply_atomic_operations(*avu_ops)
 
-    1;
-    
+
 def metadata_demo(fcs_file_name,
                   fcs_data_name = '',
                   keyword_filter = None
